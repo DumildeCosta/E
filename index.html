@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Eliandra 💖</title>
+    <meta name="description" content="Um site dedicado a Eliandra com amor e carinho">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'romantic-pink': '#f9c5d1',
+                        'deep-pink': '#f2849e',
+                        'gold': '#d4af37',
+                        'light-gold': '#f4e4c1',
+                        'soft-pink': '#fff0f5',
+                        'dark-pink': '#c2185b'
+                    },
+                    fontFamily: {
+                        'dancing': ['Dancing Script', 'cursive'],
+                        'playfair': ['Playfair Display', 'serif']
+                    },
+                    backgroundImage: {
+                        'gradient-romantic': 'linear-gradient(135deg, #f9c5d1 0%, #f4e4c1 100%)',
+                        'gradient-gold': 'linear-gradient(135deg, #d4af37 0%, #f4e4c1 100%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .heart-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .photo-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(210, 20, 90, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-soft-pink via-romantic-pink to-light-gold font-playfair">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-4xl md:text-5xl font-dancing font-bold text-dark-pink text-center heart-pulse">
+                    Para Eliandra 💖
+                </h1>
+                <p class="mt-2 text-gold italic text-center">Um espaço dedicado ao nosso amor</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Apology Section -->
+        <section id="apology" class="mb-16 fade-in">
+            <div class="max-w-4xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 md:p-12 border border-gold/30">
+                <div class="text-center mb-8">
+                    <i class="fas fa-heart text-deep-pink text-4xl mb-4"></i>
+                    <h2 class="text-3xl md:text-4xl font-dancing font-bold text-dark-pink mb-4">
+                        Com Todo Meu Coração
+                    </h2>
+                </div>
+                <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+                    <p class="text-center italic text-xl text-deep-pink mb-6">
+                        "O amor não se mede pelo número de sorrisos, mas pela força com que se supera cada desafio."
+                    </p>
+                    <p>
+                        Querida Eliandra,
+                    </p>
+                    <p>
+                        Escrevo estas palavras com o coração cheio de emoção e a alma transbordando de amor por você. 
+                        Sei que cometemos erros, que as palavras às vezes machucam e que os silêncios podem pesar mais 
+                        do que gostaríamos.
+                    </p>
+                    <p>
+                        Mas quero que saiba que cada momento ao seu lado é um tesouro que guardo com carinho. Sua 
+                        risada é a melodia mais doce que já ouvi, seu sorriso ilumina meus dias mais cinzentos e sua 
+                        presença transforma qualquer lugar em lar.
+                    </p>
+                    <p class="bg-light-gold/50 p-6 rounded-xl border-l-4 border-gold">
+                        <strong class="text-dark-pink">Peço desculpas</strong> por todas as vezes em que não fui o 
+                        homem que você merecia. Por não ter escutado com atenção suficiente, por não ter compreendido 
+                        seus sentimentos na hora certa, por qualquer dor que tenha causado.
+                    </p>
+                    <p>
+                        Meu maior desejo é <span class="text-deep-pink font-semibold">recomeçar</span>. Não apagando 
+                        nosso passado, mas aprendendo com ele. Construindo um futuro onde nossa comunicação seja 
+                        mais sincera, nosso respeito mais profundo e nosso amor mais forte a cada dia.
+                    </p>
+                    <p class="text-center text-2xl font-dancing text-gold mt-8">
+                        Você é a pessoa mais especial da minha vida, e eu quero provar isso todos os dias.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-dancing font-bold text-dark-pink mb-4">
+                    Nossos Momentos 💫
+                </h2>
+                <p class="text-gold italic">Memórias que guardo no coração</p>
+            </div>
+            <div id="gallery-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+
+        <!-- Romantic Memories -->
+        <section id="memories" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-dancing font-bold text-dark-pink mb-4">
+                    Lembranças que Aqueceram Meu Coração
+                </h2>
+                <p class="text-gold italic">Pequenos gestos, grandes significados</p>
+            </div>
+            <div id="memories-container" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </section>
+
+        <!-- Love Quotes -->
+        <section id="quotes" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-dancing font-bold text-dark-pink mb-4">
+                    Palavras do Coração
+                </h2>
+                <p class="text-gold italic">O que sinto por você em frases</p>
+            </div>
+            <div id="quotes-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+
+        <!-- Promise Section -->
+        <section id="promise" class="max-w-3xl mx-auto bg-gradient-gold rounded-2xl shadow-xl p-8 md:p-12 mb-16">
+            <div class="text-center">
+                <i class="fas fa-star text-white text-5xl mb-6"></i>
+                <h2 class="text-3xl md:text-4xl font-dancing font-bold text-white mb-6">
+                    Minha Promessa
+                </h2>
+                <p class="text-white text-xl leading-relaxed">
+                    Prometo amar você mais a cada dia, respeitar seus sentimentos, 
+                    valorizar sua presença e construir ao seu lado uma história 
+                    linda e verdadeira. Você é meu maior presente.
+                </p>
+                <div class="mt-8">
+                    <button id="love-button" class="bg-deep-pink hover:bg-dark-pink text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-heart mr-2"></i>Te Amo Eternamente
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-pink text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-2xl font-dancing mb-4">Com todo meu amor e carinho,</p>
+                <p class="text-3xl font-dancing font-bold text-light-gold">Dumilde</p>
+                <div class="mt-6 pt-6 border-t border-white/30">
+                    <p class="text-sm opacity-80">Este site foi feito especialmente para você, Eliandra. 💖</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data Layer
+        const galleryPhotos = [
+            { 
+                "id": 1, 
+                "src": "https://picsum.photos/600/400?random=1", 
+                "alt": "Momento especial juntos", 
+                "caption": "Um dia inesquecível ao seu lado",
+                "date": "2023"
+            },
+            { 
+                "id": 2, 
+                "src": "https://picsum.photos/600/400?random=2", 
+                "alt": "Paisagem romântica", 
+                "caption": "Onde tudo começou a fazer sentido",
+                "date": "2023"
+            },
+            { 
+                "id": 3, 
+                "src": "https://picsum.photos/600/400?random=3", 
+                "alt": "Pôr do sol compartilhado", 
+                "caption": "Sunsets e sonhos compartilhados",
+                "date": "2024"
+            },
+            { 
+                "id": 4, 
+                "src": "https://picsum.photos/600/400?random=4", 
+                "alt": "Momento de risadas", 
+                "caption": "Risadas que ecoam no coração",
+                "date": "2024"
+            },
+            { 
+                "id": 5, 
+                "src": "https://picsum.photos/600/400?random=5", 
+                "alt": "Caminho florido", 
+                "caption": "Nosso caminho, lado a lado",
+                "date": "2024"
+            },
+            { 
+                "id": 6, 
+                "src": "https://picsum.photos/600/400?random=6", 
+                "alt": "Noite estrelada", 
+                "caption": "Sob as mesmas estrelas",
+                "date": "2024"
+            }
+        ];
+
+        const romanticMemories = [
+            {
+                "id": 1,
+                "icon": "fas fa-coffee",
+                "title": "Café da manhã especial",
+                "description": "Lembro do dia que preparei seu café favorito só para ver você sorrir ao acordar.",
+                "color": "text-deep-pink"
+            },
+            {
+                "id": 2,
+                "icon": "fas fa-music",
+                "title": "Nossa música",
+                "description": "A primeira vez que dançamos juntos e senti que estava no lugar certo.",
+                "color": "text-gold"
+            },
+            {
+                "id": 3,
+                "icon": "fas fa-moon",
+                "title": "Conversas noturnas",
+                "description": "As horas passavam voando quando conversávamos até tarde, compartilhando sonhos.",
+                "color": "text-deep-pink"
+            },
+            {
+                "id": 4,
+                "icon": "fas fa-hands-helping",
+                "title": "Apoio incondicional",
+                "description": "Sua força nos momentos difíceis me mostrou o verdadeiro significado de parceria.",
+                "color": "text-gold"
+            }
+        ];
+
+        const loveQuotes = [
+            {
+                "id": 1,
+                "quote": "Amar você não é uma opção, é uma necessidade da minha alma.",
+                "author": "Dumilde"
+            },
+            {
+                "id": 2,
+                "quote": "Seu sorriso é meu lugar favorito no mundo inteiro.",
+                "author": "Dumilde"
+            },
+            {
+                "id": 3,
+                "quote": "Em seus olhos encontrei o lar que meu coração sempre procurou.",
+                "author": "Dumilde"
+            },
+            {
+                "id": 4,
+                "quote": "Cada dia ao seu lado é uma página nova do nosso livro de amor.",
+                "author": "Dumilde"
+            },
+            {
+                "id": 5,
+                "quote": "Você transformou meus dias comuns em histórias extraordinárias.",
+                "author": "Dumilde"
+            },
+            {
+                "id": 6,
+                "quote": "Meu amor por você cresce a cada amanhecer e se fortalece a cada anoitecer.",
+                "author": "Dumilde"
+            }
+        ];
+
+        // Reusable Render Functions
+        function renderGalleryPhotos(photos) {
+            return photos.map(photo => `
+                <div class="photo-hover bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <img src="${photo.src}" alt="${photo.alt}" class="w-full h-64 object-cover" loading="lazy">
+                        <div class="absolute top-0 left-0 bg-gold/90 text-white px-3 py-1 rounded-br-lg">
+                            <i class="fas fa-heart mr-1"></i>${photo.date}
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-dark-pink font-semibold mb-2">${photo.caption}</p>
+                        <p class="text-gray-600 text-sm">${photo.alt}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderMemories(memories) {
+            return memories.map(memory => `
+                <div class="bg-white/90 rounded-xl p-6 shadow-lg border border-gold/20">
+                    <div class="flex items-start mb-4">
+                        <div class="${memory.color} text-2xl mr-4">
+                            <i class="${memory.icon}"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-dancing font-bold text-dark-pink mb-2">${memory.title}</h3>
+                            <p class="text-gray-700">${memory.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderQuotes(quotes) {
+            return quotes.map(quote => `
+                <div class="bg-white/80 rounded-xl p-6 shadow-lg border border-romantic-pink/30">
+                    <div class="relative">
+                        <i class="fas fa-quote-left text-deep-pink/30 text-3xl absolute -top-2 -left-2"></i>
+                        <p class="text-gray-700 italic text-lg mb-4 pl-6">"${quote.quote}"</p>
+                        <div class="text-right">
+                            <p class="text-gold font-semibold">— ${quote.author}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize Content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render all sections
+            document.getElementById('gallery-container').innerHTML = renderGalleryPhotos(galleryPhotos);
+            document.getElementById('memories-container').innerHTML = renderMemories(romanticMemories);
+            document.getElementById('quotes-container').innerHTML = renderQuotes(loveQuotes);
+            
+            // Love button interaction
+            const loveButton = document.getElementById('love-button');
+            if (loveButton) {
+                loveButton.addEventListener('click', function() {
+                    this.innerHTML = '<i class="fas fa-heart mr-2"></i>Você é eterna em meu coração!';
+                    this.classList.remove('bg-deep-pink');
+                    this.classList.add('bg-dark-pink');
+                    
+                    // Create floating hearts
+                    for (let i = 0; i < 15; i++) {
+                        createFloatingHeart();
+                    }
+                });
+            }
+            
+            // Smooth scrolling for navigation
+            document.addEventListener('click', function(event) {
+                const link = event.target.closest('a[href^="#"]');
+                if (!link) return;
+                
+                event.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Create floating hearts animation
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💖';
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * window.innerWidth + 'px';
+            heart.style.top = window.innerHeight + 'px';
+            heart.style.fontSize = Math.random() * 20 + 20 + 'px';
+            heart.style.zIndex = '1000';
+            heart.style.pointerEvents = 'none';
+            heart.style.opacity = '0.8';
+            
+            document.body.appendChild(heart);
+            
+            const animation = heart.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 0.8 },
+                { transform: `translateY(-${window.innerHeight + 100}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+            ], {
+                duration: Math.random() * 2000 + 2000,
+                easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)'
+            });
+            
+            animation.onfinish = () => heart.remove();
+        }
+    </script>
+</body>
+</html>
